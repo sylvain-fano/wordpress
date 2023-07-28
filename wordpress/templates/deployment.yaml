@@ -166,7 +166,7 @@ spec:
             - name: WORDPRESS_ENABLE_HTACCESS_PERSISTENCE
               value: {{ ternary "yes" "no" .Values.htaccessPersistenceEnabled | quote }}
             - name: WORDPRESS_BLOG_NAME
-              value: {{ .Values.wordpressBlogName | quote }}
+              value: "Demicon's Blog !"
             - name: WORDPRESS_SKIP_BOOTSTRAP
               value: {{ ternary "yes" "no" .Values.wordpressSkipInstall | quote }}
             - name: WORDPRESS_TABLE_PREFIX
